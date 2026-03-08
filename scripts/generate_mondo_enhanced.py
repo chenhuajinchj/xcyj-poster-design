@@ -133,7 +133,19 @@ Return ONLY the enhanced prompt text, no explanations."""
         print(f"⚠ AI enhancement error: {e}, using standard template")
         return None
 
-def generate_prompt(subject, design_type, style="auto", ai_enhance=False, color_hint=""):
+def get_format_description(aspect_ratio):
+    """Get format description text matching the aspect ratio"""
+    ratio_descriptions = {
+        "9:16": "vertical 9:16 portrait format",
+        "16:9": "horizontal 16:9 landscape format, wide cinematic composition",
+        "21:9": "ultra-wide 21:9 panoramic banner format, horizontal landscape",
+        "3:4": "vertical 3:4 portrait format",
+        "4:3": "horizontal 4:3 landscape format",
+        "1:1": "square 1:1 format",
+    }
+    return ratio_descriptions.get(aspect_ratio, f"{aspect_ratio} format")
+
+def generate_prompt(subject, design_type, style="auto", ai_enhance=False, color_hint="", aspect_ratio="9:16"):
     """
     Generate Mondo-style prompt with optional AI enhancement
 
@@ -143,17 +155,19 @@ def generate_prompt(subject, design_type, style="auto", ai_enhance=False, color_
         style: Visual style (artist name or preset)
         ai_enhance: Whether to use AI enhancement
         color_hint: Optional color preferences from user
+        aspect_ratio: Aspect ratio for the image
 
     Returns:
         Generated prompt string
     """
+    format_desc = get_format_description(aspect_ratio)
 
     # AI Enhancement path (respects user intent)
     if ai_enhance:
         user_prefs = f"Style: {style}, Colors: {color_hint}" if color_hint else f"Style: {style}"
         enhanced = ai_enhance_prompt(subject, design_type, user_prefs)
         if enhanced:
-            return enhanced + f", Mondo poster style, screen print aesthetic, vertical 9:16 format"
+            return enhanced + f", Mondo poster style, screen print aesthetic, {format_desc}"
 
     # Standard template path
     base_elements = "Mondo poster style, screen print aesthetic, limited edition poster art"
@@ -163,13 +177,13 @@ def generate_prompt(subject, design_type, style="auto", ai_enhance=False, color_
 
     # Build prompt based on type
     if design_type == "movie":
-        prompt = f"{subject} in {base_elements}, {style_desc}, vertical 9:16 portrait format, clean focused composition, vintage poster aesthetic"
+        prompt = f"{subject} in {base_elements}, {style_desc}, {format_desc}, clean focused composition, vintage poster aesthetic"
     elif design_type == "book":
-        prompt = f"{subject} book cover in {base_elements}, {style_desc}, vertical 9:16 format, clean typography, literary design"
+        prompt = f"{subject} book cover in {base_elements}, {style_desc}, {format_desc}, clean typography, literary design"
     elif design_type == "album":
         prompt = f"{subject} album cover in {base_elements}, {style_desc}, square 1:1 format, vintage vinyl aesthetic"
     elif design_type == "event":
-        prompt = f"{subject} event poster in {base_elements}, {style_desc}, vertical 9:16 format, bold memorable design"
+        prompt = f"{subject} event poster in {base_elements}, {style_desc}, {format_desc}, bold memorable design"
     else:
         prompt = f"{subject} in {base_elements}, {style_desc}, vintage print aesthetic"
 
@@ -283,7 +297,7 @@ def generate_comparison(subject, design_type, styles, aspect_ratio="9:16", color
 
     for i, style in enumerate(styles, 1):
         print(f"\n[{i}/3] Generating {style} style...")
-        prompt = generate_prompt(subject, design_type, style, color_hint=colors)
+        prompt = generate_prompt(subject, design_type, style, color_hint=colors, aspect_ratio=aspect_ratio)
 
         timestamp = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
         temp_path = f"outputs/temp-{style}-{timestamp}.png"
@@ -417,7 +431,7 @@ Examples:
         return
 
     # Single generation mode
-    prompt = generate_prompt(args.subject, args.type, args.style, args.ai_enhance, args.colors)
+    prompt = generate_prompt(args.subject, args.type, args.style, args.ai_enhance, args.colors, args.aspect_ratio)
 
     print(f"\n{'='*80}")
     print("🎨 MONDO POSTER PROMPT")

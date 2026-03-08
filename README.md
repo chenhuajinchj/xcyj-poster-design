@@ -36,7 +36,8 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 "用 Mondo 风格为《三体》生成一张书籍封面"
 "为周杰伦《七里香》专辑设计封面"
 "生成一张爵士音乐节海报"
-"为我的读书笔记《活着》设计一张竖版配图"
+"为我的公众号文章《人类简史》设计一张 21:9 封面"
+"为我的小红书读书笔记《小王子》设计 3:4 配图"
 ```
 
 **就这么简单！** 你不需要：
@@ -46,47 +47,64 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 - ❌ 会选配色方案
 - ❌ 理解构图原理
 
-AI会自动帮你搞定这一切！🎉
+AI会自动帮你搞定这一切！
 
 ---
 
 ## 📸 看看能生成什么样的设计
 
-### 场景1：公众号封面 / 读书笔记
+### 场景1：公众号封面（21:9 超宽横版）
 
 <table>
   <tr>
     <td width="50%">
-      <img src="examples/usecase-wechat-cover.png" alt="百年孤独 - 文艺风公众号封面"><br>
-      <b>提示词</b>: "为《百年孤独》设计读书笔记封面"<br>
-      <i>→ AI选择了文艺风：柔和色调、大面积留白、水彩质感</i>
+      <img src="examples/usecase-wechat-sapiens.png" alt="人类简史 - 文艺风公众号封面"><br>
+      <b>提示词</b>: "为《人类简史》设计公众号封面"<br>
+      <i>→ AI选择了文艺风：柔和水彩质感、人类进化全景时间线</i>
     </td>
     <td width="50%">
-      <img src="examples/usecase-book-v2-penguin.png" alt="百年孤独 - Penguin经典版"><br>
-      <b>提示词</b>: "为《百年孤独》设计精装书封面"<br>
-      <i>→ AI选择了 Penguin Clothbound 经典风格：翡翠绿底+金色蝴蝶纹样</i>
+      <img src="examples/usecase-wechat-interstellar.png" alt="星际穿越 - Kilian Eng科幻风封面"><br>
+      <b>提示词</b>: "为《星际穿越》影评设计公众号封面"<br>
+      <i>→ AI选择了 Kilian Eng 几何未来主义：黑洞+飞船+宇宙深空</i>
     </td>
   </tr>
 </table>
 
-### 场景2：小红书配图 / 观影笔记
+### 场景2：小红书配图（3:4 竖版）
 
 <table>
   <tr>
     <td width="50%">
-      <img src="examples/usecase-xiaohongshu.png" alt="花样年华 - 日系小红书"><br>
+      <img src="examples/usecase-xiaohongshu-mood.png" alt="花样年华 - 日系风小红书"><br>
       <b>提示词</b>: "为《花样年华》设计观影笔记配图"<br>
-      <i>→ AI选择了日系风格：温暖胶片感、柔和自然光、淡雅色调</i>
+      <i>→ AI选择了日系风格：温暖胶片感、旗袍女人雨巷剪影</i>
     </td>
     <td width="50%">
-      <img src="examples/imdb-01-shawshank.png" alt="肖申克的救赎"><br>
-      <b>提示词</b>: "为《肖申克的救赎》设计海报"<br>
-      <i>→ AI使用Mondo负空间技巧，铁栏中飞出自由之鸟</i>
+      <img src="examples/usecase-xiaohongshu-prince.png" alt="小王子 - 韩系风小红书"><br>
+      <b>提示词</b>: "为《小王子》设计读书分享配图"<br>
+      <i>→ AI选择了韩系风格：梦幻粉紫渐变、小王子站在星球上</i>
     </td>
   </tr>
 </table>
 
-### 场景3：书籍封面设计
+### 场景3：文章配图（16:9 横版）
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="examples/usecase-article-ai.png" alt="AI与未来 - 科技文章配图"><br>
+      <b>提示词</b>: "为科技文章《AI与人类的未来》设计配图"<br>
+      <i>→ AI选择了 Kilian Eng 未来主义：数字大脑融合宇宙</i>
+    </td>
+    <td width="50%">
+      <img src="examples/usecase-article-cafe.png" alt="秋日阅读 - 文艺文章配图"><br>
+      <b>提示词</b>: "为生活文章《秋日咖啡馆的午后阅读》设计配图"<br>
+      <i>→ AI选择了文艺风：温暖金色光线、咖啡与书页</i>
+    </td>
+  </tr>
+</table>
+
+### 场景4：书籍封面设计（9:16 竖版）
 
 <table>
   <tr>
@@ -96,14 +114,39 @@ AI会自动帮你搞定这一切！🎉
       <i>→ AI选择了 Chip Kidd 概念派：黑色虚空中一个被扭曲的红色太阳</i>
     </td>
     <td width="50%">
-      <img src="examples/usecase-album-cover.png" alt="深夜爵士 - Peter Saville极简"><br>
-      <b>提示词</b>: "为深夜爵士歌单设计封面"<br>
-      <i>→ AI选择了 Peter Saville 极简：深蓝虚空中一个萨克斯图标</i>
+      <img src="examples/usecase-book-v2-penguin.png" alt="百年孤独 - Penguin经典版"><br>
+      <b>提示词</b>: "为《百年孤独》设计精装书封面"<br>
+      <i>→ AI选择了 Penguin Clothbound 经典风格：翡翠绿底+金色蝴蝶纹样</i>
     </td>
   </tr>
 </table>
 
-### 场景4：活动海报 / 朋友圈分享
+### 场景5：专辑封面设计（1:1 正方形）
+
+<table>
+  <tr>
+    <td width="33%">
+      <img src="examples/usecase-album-pinkfloyd.png" alt="Pink Floyd - The Dark Side of the Moon"><br>
+      <b>Pink Floyd</b><br>
+      <i>The Dark Side of the Moon</i><br>
+      <i>→ Peter Saville 极简：棱镜分光彩虹</i>
+    </td>
+    <td width="33%">
+      <img src="examples/usecase-album-radiohead.png" alt="Radiohead - OK Computer"><br>
+      <b>Radiohead</b><br>
+      <i>OK Computer</i><br>
+      <i>→ Reid Miles 高对比：数字荒原孤独身影</i>
+    </td>
+    <td width="33%">
+      <img src="examples/usecase-album-joydivision.png" alt="Joy Division - Unknown Pleasures"><br>
+      <b>Joy Division</b><br>
+      <i>Unknown Pleasures</i><br>
+      <i>→ David Stone Martin 极简：脉冲波形线条</i>
+    </td>
+  </tr>
+</table>
+
+### 场景6：活动海报 / 朋友圈分享（9:16 竖版）
 
 <table>
   <tr>
@@ -120,45 +163,79 @@ AI会自动帮你搞定这一切！🎉
   </tr>
 </table>
 
-### 经典电影海报 (IMDB Top 10)
+### 经典电影海报（IMDB Top 10）
 
 <table>
   <tr>
-    <td width="33%">
+    <td width="20%">
+      <img src="examples/imdb-01-shawshank.png" alt="肖申克的救赎"><br>
+      <b>肖申克的救赎</b><br>
+      <i>负空间，铁栏中飞出自由之鸟</i>
+    </td>
+    <td width="20%">
       <img src="examples/imdb-02-godfather.png" alt="教父"><br>
-      <b>教父</b> - <i>极简主义，操控之手</i>
+      <b>教父</b><br>
+      <i>极简主义，操控之手</i>
     </td>
-    <td width="33%">
+    <td width="20%">
       <img src="examples/imdb-03-dark-knight.png" alt="黑暗骑士"><br>
-      <b>黑暗骑士</b> - <i>视觉双关，蝙蝠中的小丑</i>
+      <b>黑暗骑士</b><br>
+      <i>视觉双关，蝙蝠中的小丑</i>
     </td>
-    <td width="33%">
-      <img src="examples/example-negative-space.png" alt="唐伯虎点秋香"><br>
-      <b>唐伯虎点秋香</b> - <i>负空间技巧，扇中藏女</i>
+    <td width="20%">
+      <img src="examples/imdb-04-godfather-2.png" alt="教父2"><br>
+      <b>教父2</b><br>
+      <i>暗影传承，父与子</i>
+    </td>
+    <td width="20%">
+      <img src="examples/imdb-05-12-angry-men.png" alt="十二怒汉"><br>
+      <b>十二怒汉</b><br>
+      <i>极简几何，十二把椅子</i>
+    </td>
+  </tr>
+  <tr>
+    <td width="20%">
+      <img src="examples/imdb-06-lotr-return.png" alt="指环王：王者归来"><br>
+      <b>指环王：王者归来</b><br>
+      <i>史诗对比，至尊魔戒</i>
+    </td>
+    <td width="20%">
+      <img src="examples/imdb-07-schindlers-list.png" alt="辛德勒的名单"><br>
+      <b>辛德勒的名单</b><br>
+      <i>黑白中的红色，生命之光</i>
+    </td>
+    <td width="20%">
+      <img src="examples/imdb-08-lotr-fellowship.png" alt="指环王：护戒使者"><br>
+      <b>指环王：护戒使者</b><br>
+      <i>奇幻冒险，九人远征</i>
+    </td>
+    <td width="20%">
+      <img src="examples/imdb-09-pulp-fiction.png" alt="低俗小说"><br>
+      <b>低俗小说</b><br>
+      <i>波普拼贴，非线性叙事</i>
+    </td>
+    <td width="20%">
+      <img src="examples/imdb-10-good-bad-ugly.png" alt="黄金三镖客"><br>
+      <b>黄金三镖客</b><br>
+      <i>西部对峙，三人剪影</i>
     </td>
   </tr>
 </table>
 
 ---
 
-## 🎯 更多适用场景
+## 🎯 支持的平台和比例
 
-### 内容创作
-- **📱 公众号封面** - 读书笔记、影评、书评（如上《百年孤独》示例）
-- **🎨 小红书配图** - 观影笔记、读书分享（如上《花样年华》示例）
-- **🐦 X/Twitter封面** - 电影推荐、书单、个人品牌
-- **📖 朋友圈海报** - 分享生活、推荐好物（如上《咖啡与书》示例）
-
-### 个人创意项目
-- **📚 书籍封面** - 电子书、博客文集（如上《三体》示例）
-- **🎵 歌单封面** - Spotify、网易云歌单（如上《深夜爵士》示例）
-- **🎭 活动海报** - 读书会、观影会（如上《周末观影会》示例）
-- **🖼️ 家庭装饰** - 打印出来装框挂墙上
-
-### 学习展示
-- **📝 论文封面** - 毕业论文、课程作业
-- **📊 PPT首页** - 课堂展示、工作汇报
-- **🎓 学习总结** - 读书报告、观影记录
+| 平台 / 用途 | 推荐比例 | 命令行参数 | 说明 |
+|------------|---------|-----------|------|
+| 📱 **公众号封面** | 21:9 | `--aspect-ratio 21:9` | 超宽横版，适合文章头图 |
+| 📕 **小红书配图** | 3:4 | `--aspect-ratio 3:4` | 竖版，小红书最常见比例 |
+| 📝 **文章配图** | 16:9 | `--aspect-ratio 16:9` | 横版，适合博客/知乎/Medium |
+| 📚 **书籍封面** | 9:16 | `--aspect-ratio 9:16`（默认） | 竖版，经典书籍比例 |
+| 🎵 **专辑封面** | 1:1 | `--aspect-ratio 1:1` | 正方形，Spotify/网易云标准 |
+| 🎭 **活动海报** | 9:16 | `--aspect-ratio 9:16`（默认） | 竖版，手机展示最佳 |
+| 🎬 **电影海报** | 9:16 | `--aspect-ratio 9:16`（默认） | 竖版，经典海报比例 |
+| 🖥️ **桌面壁纸** | 16:9 | `--aspect-ratio 16:9` | 横版，电脑桌面 |
 
 ---
 
@@ -172,9 +249,10 @@ AI会自动帮你搞定这一切！🎉
 |--------------|----------------|-------|
 | 📱 公众号读书笔记 | **文艺风** 柔和留白水彩 | 诗意氛围适合深度阅读 |
 | 📕 小红书观影笔记 | **日系风** 胶片感温暖色调 | 温暖质感适合生活美学 |
+| 📕 小红书读书分享 | **韩系风** 梦幻粉彩渐变 | 清新梦幻适合书籍分享 |
 | 📚 书籍封面（文学） | **Penguin Clothbound** 经典纹样 | 出版级精装书美学 |
 | 📚 书籍封面（科幻） | **Chip Kidd** 概念派视觉隐喻 | Random House 级别设计 |
-| 🎵 专辑/歌单封面 | **Peter Saville** 极度抽象 | Factory Records 极简美学 |
+| 🎵 专辑封面 | **Peter Saville / Reid Miles** | 传奇唱片公司美学 |
 | 🎬 科幻电影海报 | **Kilian Eng** 几何未来主义 | 精准技术线条 |
 | 🎬 文艺电影海报 | **Alphonse Mucha** 新艺术 | 流动曲线东方美学 |
 | 🎬 悬疑电影海报 | **Olly Moss** 负空间 | 隐藏意象制造神秘感 |
@@ -198,14 +276,14 @@ AI懂得专业设计原则：
 - **极简主义** - 用最少的元素传递最强的信息
 - **戏剧性对比** - 大小对比营造情感冲击
 
-### 4. 自动优化手机竖屏
+### 4. 自动适配平台比例
 
-默认生成 **9:16 竖版**，完美适配：
-- 手机壁纸
-- Instagram Stories
-- 小红书
-- 微信公众号封面
-- 朋友圈海报
+根据用途自动匹配最佳比例：
+- 公众号封面 → **21:9** 超宽横版
+- 小红书配图 → **3:4** 竖版
+- 文章配图 → **16:9** 横版
+- 书籍封面 → **9:16** 竖版
+- 专辑封面 → **1:1** 正方形
 
 ---
 
@@ -217,7 +295,7 @@ AI懂得专业设计原则：
 | 风格统一性 | ❌ 每次风格不稳定 | ⚠️ 模板固定 | ✅ **AI选择匹配风格** |
 | 艺术性 | ⚠️ 看运气 | ❌ 很业余 | ✅ **大师级艺术风格** |
 | 个性化 | ✅ 自由度高 | ❌ 很难改 | ✅ **AI优化你的想法** |
-| 版权问题 | ⚠️ 不确定 | ⚠️ 商用受限 | ✅ **AI生成可商用** |
+| 多平台适配 | ❌ 手动调整比例 | ⚠️ 有限模板 | ✅ **自动适配各平台比例** |
 | 适合新手 | ❌ 需要学习 | ✅ 但千篇一律 | ✅ **零门槛+独特性** |
 
 ---
@@ -237,20 +315,29 @@ Mondo 是美国一家传奇海报公司，他们为经典电影设计**限量版
 
 ### 背后有哪些艺术大师？
 
-这个工具集成了**20位传奇海报设计师**的艺术风格，从1870年代到现在：
+这个工具集成了**33+位传奇设计师**的艺术风格：
 
-#### 电影海报界传奇
+#### 电影海报界传奇（20位）
 - **Saul Bass** - 希区柯克御用设计师，极简几何
 - **Olly Moss** - 负空间大师，巧妙视觉双关
 - **Drew Struzan** - 《星球大战》《夺宝奇兵》御用，史诗绘画风格
-
-#### 现代艺术先驱
-- **Toulouse-Lautrec** - 蒙马特大师，19世纪海报革命者
-- **Alphonse Mucha** - 新艺术运动代表，流动曲线与花卉
-
-#### 当代创新者
 - **Kilian Eng** - 几何未来主义，适合科幻题材
-- **Milton Glaser** - I❤NY标志设计者，迷幻波普艺术
+
+#### 书籍封面大师（6位）
+- **Chip Kidd** - Random House 首席设计师，概念派视觉隐喻
+- **Coralie Bickford-Smith** - Penguin Clothbound 经典纹样
+- **王志弘** - 东亚书籍设计，克制优雅
+
+#### 专辑封面传奇（3位）
+- **Peter Saville** - Factory Records，Joy Division/New Order 封面设计
+- **Reid Miles** - Blue Note Records，爵士乐黄金时代
+- **David Stone Martin** - Verve Records，极简水墨线条
+
+#### 社交媒体风格（4种）
+- **文艺风** - 柔和留白，诗意氛围
+- **日系风** - 胶片感，温暖自然
+- **韩系风** - 梦幻粉彩，清新渐变
+- **国潮风** - 传统元素，现代演绎
 
 **你不需要记住这些名字**，AI会自动为你选择最合适的风格！
 
@@ -279,7 +366,15 @@ AI会生成三种艺术风格并排对比，帮你选择最喜欢的。
 "为爵士音乐节设计海报，用橙色、深蓝色和金色"
 ```
 
-### 4. 让AI优化你的想法
+### 4. 指定平台比例
+
+```bash
+"为《人类简史》设计公众号封面，21:9 比例"
+"为《小王子》设计小红书配图，3:4 比例"
+"为文章《AI的未来》生成 16:9 配图"
+```
+
+### 5. 让AI优化你的想法
 
 ```bash
 "为《三体》设计书籍封面，我想表现宇宙的浩瀚感，用AI帮我优化提示词"
@@ -294,8 +389,20 @@ AI会在保留你核心想法的基础上，添加专业的设计元素。
 如果你喜欢用命令行：
 
 ```bash
-# 基础生成（9:16竖版）
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "三体" book
+# 公众号封面（21:9 超宽横版）
+python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "人类简史" book --style wenyi --aspect-ratio 21:9
+
+# 小红书配图（3:4 竖版）
+python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "花样年华" movie --style rixi --aspect-ratio 3:4
+
+# 文章配图（16:9 横版）
+python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "AI与未来" movie --style kilian-eng --aspect-ratio 16:9
+
+# 书籍封面（默认 9:16 竖版）
+python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "三体" book --style chip-kidd
+
+# 专辑封面（1:1 正方形）
+python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "Dark Side of the Moon" album --style peter-saville --aspect-ratio 1:1
 
 # AI增强提示词
 python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "银翼杀手" movie --ai-enhance
@@ -303,10 +410,7 @@ python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhan
 # 三栏风格对比
 python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "盗梦空间" movie --compare saul-bass,olly-moss,kilian-eng
 
-# 自定义配色
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "爵士之夜" event --colors "橙色, 紫色, 金色"
-
-# 查看所有20种艺术家风格
+# 查看所有33+种风格
 python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py --list-styles
 ```
 
@@ -315,7 +419,7 @@ python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhan
 ## 📚 更多资料
 
 - [SKILL.md](SKILL.md) - 完整技术文档
-- [references/artist-styles.md](references/artist-styles.md) - 20位艺术家风格详解
+- [references/artist-styles.md](references/artist-styles.md) - 33+位设计师风格详解
 - [references/genre-templates.md](references/genre-templates.md) - 各类型模板参考
 - [requirements.txt](requirements.txt) - 依赖包列表
 
@@ -332,6 +436,9 @@ python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhan
 ### Q: 我不喜欢AI自动选的风格怎么办？
 **A:** 你可以让AI"对比三种风格"，然后选择你喜欢的。或者直接指定风格，比如"用极简风格"、"用复古风格"。
 
+### Q: 不同平台的比例怎么选？
+**A:** 直接告诉AI你要用在哪个平台即可！比如"公众号封面"会自动用 21:9，"小红书配图"会自动用 3:4。也可以手动指定比例。
+
 ### Q: 可以修改已有的图片吗？
 **A:** 可以！这叫"图生图"功能，你可以把现有的照片或海报转换成Mondo艺术风格。
 
@@ -345,7 +452,7 @@ python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhan
 设计不应该是少数人的特权。
 好的工具应该让**每个人**都能轻松创作出专业级作品。
 
-**如果这个工具帮到了你，欢迎分享给更多朋友！** 💝
+**如果这个工具帮到了你，欢迎分享给更多朋友！**
 
 ---
 
@@ -360,4 +467,4 @@ python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhan
 
 ---
 
-**由 [Claude Code](https://claude.com/claude-code) 提供支持** 🤖✨
+**由 [Claude Code](https://claude.com/claude-code) 提供支持**
