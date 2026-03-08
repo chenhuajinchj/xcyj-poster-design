@@ -16,8 +16,8 @@ from google import genai
 from google.genai import types
 
 # API Configuration
-DEFAULT_IMAGE_MODEL = 'gemini-3-pro-image-preview'
-DEFAULT_TEXT_MODEL = 'gemini-2.5-flash'
+DEFAULT_IMAGE_MODEL = 'gemini-3.1-flash-image-preview'
+DEFAULT_TEXT_MODEL = 'gemini-3.1-flash-lite-preview'
 
 # Photography styles that use photorealistic base instead of Mondo poster base
 PHOTO_STYLES = {

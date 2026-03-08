@@ -12,7 +12,7 @@ from google import genai
 from google.genai import types
 
 # API Configuration
-DEFAULT_IMAGE_MODEL = 'gemini-3-pro-image-preview'
+DEFAULT_IMAGE_MODEL = 'gemini-3.1-flash-image-preview'
 
 # Photography styles (realistic, not poster art)
 PHOTO_STYLES = {
