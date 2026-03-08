@@ -1,6 +1,6 @@
 ---
-name: mondo-poster-prompt
-description: Generate AI image prompts and create designs in Mondo's iconic screen-printed style with bold colors, minimalist composition, and symbolic imagery. Use for movie posters, book covers, album art, event posters, or any design requiring vintage limited-edition print aesthetics. Includes direct image generation via AI Gateway API. Triggers include "Mondo style", "book cover design", "album cover", "alternative poster", "screen print style", "retro poster design", "vintage aesthetic", or "limited edition print".
+name: qiaomu-mondo-poster-design
+description: 一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。无需懂PS、配色或艺术史，AI自动选择最佳风格（基于20位传奇海报设计师）。支持电影海报、读书笔记、公众号封面、小红书配图等。默认9:16竖版，完美适配社交媒体。包含AI提示词优化、风格对比、图生图转换功能。触发词："Mondo风格"、"书籍封面设计"、"专辑封面"、"海报设计"、"读书笔记配图"、"公众号封面"。One-sentence generation of master-level posters, book covers, and designs. No need to know Photoshop, color theory, or art history - AI automatically selects the best style from 20 legendary poster designers. Perfect for social media with default 9:16 format.
 ---
 
 # Mondo Style Design Generator
