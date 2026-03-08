@@ -1,8 +1,8 @@
-# 乔木 Mondo 海报设计 / Qiaomu Mondo Poster Design
+# XCYJ 海报设计 / XCYJ Poster Design
 
 [English](README.en.md) | 简体中文
 
-> **一句话，生成大师级设计** - 不会PS、不懂配色、不认识艺术家？没关系，只需用一句话描述你想要什么，AI自动选择最合适的艺术风格，为你生成专业级海报、封面和设计作品。
+> **一句话，生成大师级设计** - 不会PS、不懂配色、不认识艺术家？没关系，只需用一句话描述你想要什么，AI自动选择最合适的艺术风格，为你生成专业级海报、封面和设计作品。支持 Mondo 海报风格和写实摄影风格。
 
 ---
 
@@ -27,10 +27,8 @@
 ### 安装（复制粘贴就行）
 
 ```bash
-npx skills add joeseesun/qiaomu-mondo-poster-design
+npx skills add chenhuajinchj/xcyj-poster-design
 ```
-
-### 使用（对Claude说一句话）
 
 ```
 "用 Mondo 风格为《三体》生成一张书籍封面"
@@ -38,6 +36,8 @@ npx skills add joeseesun/qiaomu-mondo-poster-design
 "生成一张爵士音乐节海报"
 "为我的公众号文章《人类简史》设计一张 21:9 封面"
 "为我的小红书读书笔记《小王子》设计 3:4 配图"
+"用 CCD 闪光写真风格拍一张人像"
+"用胶片黄昏风格生成日落场景"
 ```
 
 **就这么简单！** 你不需要：
@@ -315,7 +315,7 @@ Mondo 是美国一家传奇海报公司，他们为经典电影设计**限量版
 
 ### 背后有哪些艺术大师？
 
-这个工具集成了**33+位传奇设计师**的艺术风格：
+这个工具集成了**33+位传奇设计师 + 10种写实摄影风格**：
 
 #### 电影海报界传奇（20位）
 - **Saul Bass** - 希区柯克御用设计师，极简几何
@@ -338,6 +338,18 @@ Mondo 是美国一家传奇海报公司，他们为经典电影设计**限量版
 - **日系风** - 胶片感，温暖自然
 - **韩系风** - 梦幻粉彩，清新渐变
 - **国潮风** - 传统元素，现代演绎
+
+#### 写实摄影风格（10种）
+- **CCD 闪光写真** — 2000s CCD 手机质感，强闪光，怼脸拍
+- **Kodak 胶片黄昏** — Portra 400 模拟，暖金高光，深青阴影
+- **丁达尔森林** — 体积光束，斑驳树影，漂浮尘埃
+- **影楼午后光** — 落地白纱窗，暖中性色温，奶油质感
+- **赛博霓虹** — 都市 loft，霓虹反射，金属银蓝
+- **雪景高调** — 极简高调，冰白纯净，珍珠光泽
+- **复古图书馆** — 钨丝暖灯，琥珀金色调，文学氛围
+- **樱花春日** — 日系甜美，粉色柔光，梦幻散焦
+- **沙漠日落** — 强侧逆光，翡翠绿金色对比，异域感
+- **古典花园晨雾** — 晨雾弥漫，蕾丝花纹，浪漫古典
 
 **你不需要记住这些名字**，AI会自动为你选择最合适的风格！
 
@@ -390,28 +402,28 @@ AI会在保留你核心想法的基础上，添加专业的设计元素。
 
 ```bash
 # 公众号封面（21:9 超宽横版）
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "人类简史" book --style wenyi --aspect-ratio 21:9
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py "人类简史" book --style wenyi --aspect-ratio 21:9
 
 # 小红书配图（3:4 竖版）
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "花样年华" movie --style rixi --aspect-ratio 3:4
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py "花样年华" movie --style rixi --aspect-ratio 3:4
 
 # 文章配图（16:9 横版）
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "AI与未来" movie --style kilian-eng --aspect-ratio 16:9
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py "AI与未来" movie --style kilian-eng --aspect-ratio 16:9
 
 # 书籍封面（默认 9:16 竖版）
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "三体" book --style chip-kidd
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py "三体" book --style chip-kidd
 
 # 专辑封面（1:1 正方形）
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "Dark Side of the Moon" album --style peter-saville --aspect-ratio 1:1
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py "Dark Side of the Moon" album --style peter-saville --aspect-ratio 1:1
 
 # AI增强提示词
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "银翼杀手" movie --ai-enhance
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py "银翼杀手" movie --ai-enhance
 
 # 三栏风格对比
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py "盗梦空间" movie --compare saul-bass,olly-moss,kilian-eng
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py "盗梦空间" movie --compare saul-bass,olly-moss,kilian-eng
 
 # 查看所有33+种风格
-python3 ~/.claude/skills/qiaomu-mondo-poster-design/scripts/generate_mondo_enhanced.py --list-styles
+python3 ~/.claude/skills/xcyj-poster-design/scripts/generate_mondo_enhanced.py --list-styles
 ```
 
 ---

@@ -522,6 +522,195 @@ Combine complementary approaches:
 
 ---
 
+## Photography / Realistic Styles (10)
+
+These styles produce **photorealistic images** rather than screen-print poster art. They use `ultra photorealistic, cinematic photograph, 8K resolution` as the base instead of the Mondo poster aesthetic.
+
+### 1. CCD 闪光写真 (`ccd-flash`)
+
+**Characteristics:**
+- Early 2000s CCD smartphone aesthetic
+- Strong built-in flash, close-up face shot
+- Candid raw snapshot energy, slight amateur framing
+- Digital noise in mid-shadows and deeper fabric folds
+- Low dynamic range with clipped bright whites
+
+**Prompt Modifiers:**
+```
+early 2000s CCD smartphone aesthetic, strong built-in flash, close-up face shot,
+candid raw snapshot energy, slight amateur framing charm, digital noise in
+mid-shadows, low dynamic range, clipped bright whites
+```
+
+**Best For:** Portraits, social media content, nostalgic youth photography
+
+---
+
+### 2. Kodak 胶片黄昏 (`kodak-portra`)
+
+**Characteristics:**
+- Kodak Portra 400 film emulation
+- Warm golden-orange highlights with deep cyan shadows
+- Rich sunset side lighting, vintage analog grain
+- Golden hour warmth, creamy skin tones
+
+**Prompt Modifiers:**
+```
+Kodak Portra 400 film emulation, warm golden-orange highlights, deep cyan
+shadows, rich sunset side lighting, vintage analog grain, golden hour warmth,
+creamy film emulation
+```
+
+**Best For:** Golden hour portraits, sunset scenes, romantic photography
+
+---
+
+### 3. 丁达尔森林 (`tyndall-forest`)
+
+**Characteristics:**
+- Dramatic Tyndall effect volumetric light beams
+- Dense forest canopy with dappled moving shadows
+- Floating dust and pollen particles
+- Cold emerald green dominant with warm golden beam contrast
+
+**Prompt Modifiers:**
+```
+dramatic Tyndall effect volumetric light beams through dense forest canopy,
+dappled moving shadows, floating dust and pollen particles, cold emerald
+green dominant with warm golden beam contrast
+```
+
+**Best For:** Nature photography, fairy-tale scenes, atmospheric portraits
+
+---
+
+### 4. 影楼午后光 (`studio-afternoon`)
+
+**Characteristics:**
+- Luxury high-ceiling photography studio
+- Floor-to-ceiling sheer white curtains diffusing soft afternoon daylight
+- Warm-neutral beige color temperature (3200-4500K)
+- Creamy film emulation, dewy skin glow
+
+**Prompt Modifiers:**
+```
+luxury high-ceiling photography studio, floor-to-ceiling sheer white curtains
+diffusing soft afternoon natural daylight, warm-neutral beige color temperature
+3200-4500K, creamy film emulation, dewy skin glow
+```
+
+**Best For:** Studio portraits, fashion photography, beauty shots
+
+---
+
+### 5. 赛博霓虹 (`cyberpunk-neon`)
+
+**Characteristics:**
+- Urban loft with floor-to-ceiling windows
+- Neon sign reflections bleeding into scene
+- Metallic silver-blue palette
+- Cool cyberpunk elegance, moody mixed lighting
+
+**Prompt Modifiers:**
+```
+urban loft floor-to-ceiling windows, neon sign reflections bleeding into scene,
+metallic silver-blue palette, cool cyberpunk elegance, moody mixed lighting
+```
+
+**Best For:** Urban portraits, night photography, cyberpunk themes
+
+---
+
+### 6. 雪景高调 (`snow-cabin`)
+
+**Characteristics:**
+- Minimalist high-key exposure
+- Pristine ice-white pure tones
+- Pearl-like luminous glow
+- Snow cabin window soft diffused light
+
+**Prompt Modifiers:**
+```
+minimalist high-key exposure, pristine ice-white pure tones, pearl-like
+luminous glow, snow cabin window soft diffused light, extreme clean aesthetic
+```
+
+**Best For:** Winter themes, minimalist portraits, clean aesthetic
+
+---
+
+### 7. 复古图书馆 (`vintage-library`)
+
+**Characteristics:**
+- Warm tungsten filament lamp lighting
+- Amber-gold color cast
+- Dark wood bookshelves background
+- Literary vintage atmosphere, rich shadow depth
+
+**Prompt Modifiers:**
+```
+warm tungsten filament lamp lighting, amber-gold color cast, dark wood
+bookshelves background, literary vintage atmosphere, rich shadow depth
+```
+
+**Best For:** Literary themes, academic portraits, cozy interiors
+
+---
+
+### 8. 樱花春日 (`cherry-blossom`)
+
+**Characteristics:**
+- Japanese sweet spring aesthetic
+- Pink soft-focus bokeh
+- Dreamy scattered cherry blossom petals
+- Pastel pink diffused light, gentle ethereal glow
+
+**Prompt Modifiers:**
+```
+Japanese sweet spring aesthetic, pink soft-focus bokeh, dreamy scattered
+cherry blossom petals, pastel pink diffused light, gentle ethereal glow
+```
+
+**Best For:** Spring portraits, romantic scenes, Japanese aesthetic
+
+---
+
+### 9. 沙漠日落 (`desert-sunset`)
+
+**Characteristics:**
+- Strong side-backlight on desert sand dunes
+- Emerald-green and gold color contrast
+- Exotic tropical elegance
+- Dramatic rim lighting, warm golden contour
+
+**Prompt Modifiers:**
+```
+strong side-backlight on desert sand dunes, emerald-green and gold color
+contrast, exotic tropical elegance, dramatic rim lighting, warm golden contour
+```
+
+**Best For:** Desert landscapes, exotic portraits, adventure themes
+
+---
+
+### 10. 古典花园晨雾 (`classical-garden`)
+
+**Characteristics:**
+- Morning mist permeating classical garden
+- Lace-pattern shadows
+- Romantic classical atmosphere
+- Soft diffused misty glow, delicate floral elements
+
+**Prompt Modifiers:**
+```
+morning mist permeating classical garden, lace-pattern shadows, romantic
+classical atmosphere, soft diffused misty glow, delicate floral elements
+```
+
+**Best For:** Romantic portraits, classical themes, garden photography
+
+---
+
 ## Choosing by Film Genre
 
 | Genre | Primary Style | Alternative Style |

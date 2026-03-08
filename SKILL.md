@@ -1,6 +1,6 @@
 ---
-name: qiaomu-mondo-poster-design
-description: 一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。无需懂PS、配色或艺术史，AI自动选择最佳风格（基于33+位传奇设计师）。支持多平台多比例：公众号封面(21:9)、小红书配图(3:4)、文章配图(16:9)、书籍封面(9:16)、专辑封面(1:1)、电影海报(9:16)。包含AI提示词优化、风格对比、图生图转换功能。触发词："Mondo风格"、"书籍封面设计"、"专辑封面"、"海报设计"、"读书笔记配图"、"公众号封面"、"小红书配图"、"文章配图"。One-sentence generation of master-level posters, book covers, album covers and designs. 33+ legendary designer styles with multi-platform aspect ratio support (21:9, 16:9, 3:4, 1:1, 9:16).
+name: xcyj-poster-design
+description: 一句话生成大师级海报、书籍封面、专辑封面和各类设计作品。无需懂PS、配色或艺术史，AI自动选择最佳风格（基于33+位传奇设计师 + 10种写实摄影风格）。支持多平台多比例：公众号封面(21:9)、小红书配图(3:4)、文章配图(16:9)、书籍封面(9:16)、专辑封面(1:1)、电影海报(9:16)。包含AI提示词优化、风格对比、图生图转换功能。触发词："Mondo风格"、"书籍封面设计"、"专辑封面"、"海报设计"、"读书笔记配图"、"公众号封面"、"小红书配图"、"文章配图"、"写真风格"、"摄影风格"。One-sentence generation of master-level posters, book covers, album covers and designs. 33+ legendary designer styles + 10 photorealistic photography styles with multi-platform aspect ratio support.
 ---
 
 # Mondo Style Design Generator
@@ -9,7 +9,7 @@ Generate AI image prompts AND create actual designs in Mondo's distinctive alter
 
 **This skill can:**
 - Generate detailed Mondo-style prompts for any subject
-- Create actual images directly via AI Gateway API
+- Create actual images directly via Google Gemini API
 - Design movie posters, book covers, album art, event posters
 - Provide genre-specific and format-specific templates
 
@@ -267,7 +267,33 @@ python3 scripts/generate_mondo_enhanced.py "noir thriller" movie --input origina
 - Apply Mondo aesthetic to existing designs
 - Reimagine classic posters
 
-### 4. 20 Greatest Poster Artists
+### 4. Photography / Realistic Styles (NEW!)
+
+10 photorealistic photography styles from expert prompt engineering:
+
+```bash
+python3 scripts/generate_mondo_enhanced.py "portrait" event --style ccd-flash
+python3 scripts/generate_mondo_enhanced.py "sunset scene" movie --style kodak-portra
+```
+
+| Key | Name | Description |
+|-----|------|-------------|
+| `ccd-flash` | CCD 闪光写真 | 2000s CCD smartphone, strong flash, close-up |
+| `kodak-portra` | Kodak 胶片黄昏 | Portra 400 film, warm golden highlights, cyan shadows |
+| `tyndall-forest` | 丁达尔森林 | Volumetric light beams, dappled shadows, floating dust |
+| `studio-afternoon` | 影楼午后光 | Studio with white curtains, warm neutral, creamy |
+| `cyberpunk-neon` | 赛博霓虹 | Urban loft, neon reflections, metallic silver-blue |
+| `snow-cabin` | 雪景高调 | Minimalist high-key, ice-white, pearl glow |
+| `vintage-library` | 复古图书馆 | Tungsten warm lamp, amber-gold, literary |
+| `cherry-blossom` | 樱花春日 | Japanese sweet, pink bokeh, dreamy petals |
+| `desert-sunset` | 沙漠日落 | Strong side-backlight, emerald-gold contrast |
+| `classical-garden` | 古典花园晨雾 | Morning mist, lace shadows, romantic classical |
+
+Photography styles use a **photorealistic base** (`ultra photorealistic, cinematic photograph, 8K resolution`) instead of the Mondo poster base, producing realistic images rather than screen-print art.
+
+**Structured JSON prompt format** is also supported — you can pass a JSON object with `subject`, `expression`, `clothing`, `pose_and_scene`, `photography_style`, and `technical` fields for fine-grained control.
+
+### 5. 20 Greatest Poster Artists
 
 Now includes 20 legendary artist styles:
 
@@ -442,11 +468,11 @@ If you prefer to generate prompts manually and use other image generation tools:
 
 1. Use this skill to generate the Mondo-style prompt
 2. Pass the prompt to:
-   - `/generate-image` - AI Gateway API (recommended)
-   - `/ai-image-generation` - FLUX, Gemini, and other models
-   - `/qiaomu-image-generator` - For article/content illustrations
+   - Google Gemini API (built-in, recommended)
+   - `/generate-image` - Other image generation APIs
+   - `/ai-image-generation` - FLUX, and other models
 
 **Recommended settings:**
-- Model: `google/gemini-3.1-flash-image-preview` (best quality/speed balance)
+- Model: `gemini-3-pro-image-preview` (best quality via Google Gemini API)
 - Resolution: 2K or higher for print quality
 - Format: PNG with transparency support
